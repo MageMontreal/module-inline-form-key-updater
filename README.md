@@ -23,4 +23,6 @@ ________________________________________________
 
 Alternatively, a script is executed inline before the page body end updating all form_key inputs on the page including those that were not added through the Magento\Framework\View\Element\FormKey block. Although it is executed sooner than Magento's built-in functions as it doesn't rely on RequireJS or have to wait for other dependencies to load, this approach may still result in a perceptible delay on long pages as the script will solely be executed once the browser has loaded the entire body section.
 
+________________________________________________
+
 ***Note:*** *Uses pure JavaScript to ensure that the scripts are executed without having to wait for RequireJS or any dependencies.*
