@@ -1,0 +1,18 @@
+<?php
+/**
+ * @author Nicolas D'Aoust
+ * @copyright Copyright © 2020 MageMontreal. All rights reserved.
+ * @package MageMontreal_InlineFormKeyUpdater
+ */
+?>
+<script>
+(function (formKey) {
+    
+    var inputs = document.querySelectorAll("input[name='form_key']");
+    
+    for (var i = 0, input; input = inputs[i++];) {
+        input.value = formKey;
+    }
+
+})(formKey);
+</script>

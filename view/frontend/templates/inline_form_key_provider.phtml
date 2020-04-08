@@ -1,0 +1,19 @@
+<?php
+/**
+ * @author Nicolas D'Aoust
+ * @copyright Copyright © 2020 MageMontreal. All rights reserved.
+ * @package MageMontreal_InlineFormKeyUpdater
+ */
+?>
+<script>
+var formKey = (function () {
+    
+    var value = "; " + document.cookie;
+    var parts = value.split("; " + 'form_key' + "=");
+    
+    if (parts.length == 2) {
+        return parts.pop().split(";").shift();
+    }
+    
+})();
+</script>

@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @author Nicolas D'Aoust
+ * @copyright Copyright © 2020 MageMontreal. All rights reserved.
+ * @package MageMontreal_InlineFormKeyUpdater
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="magemontreal" translate="label" sortOrder="500" class="magemontreal-tab">
+            <label>MageMontreal</label>
+        </tab>
+        <section id="magemontreal_inlineformkeyupdater" translate="label" type="text" sortOrder="999" showInDefault="1" showInWebsite="1" showInStore="1">
+            <label>Inline Form Key Updater</label>
+            <tab>magemontreal</tab>
+            <resource>MageMontreal_InlineFormKeyUpdater::config</resource>
+            <group id="general" translate="label" type="text" sortOrder="2" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>General</label>
+                <field id="enable" translate="label" type="select" sortOrder="100" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>Enable</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

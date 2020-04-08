@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @author Nicolas D'Aoust
+ * @copyright Copyright © 2020 MageMontreal. All rights reserved.
+ * @package MageMontreal_InlineFormKeyUpdater
+ */
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceBlock name="head.additional">
+            <block class="Magento\Framework\View\Element\Template" name="inline.form.key.provider" ifconfig="magemontreal_inlineformkeyupdater/general/enable">
+                <arguments>
+                    <argument name="template" xsi:type="string">MageMontreal_InlineFormKeyUpdater::inline_form_key_provider.phtml</argument>
+                </arguments>
+            </block>
+        </referenceBlock>
+        <referenceContainer name="before.body.end">
+            <block class="Magento\Framework\View\Element\Template" name="inline.form.key.updater" ifconfig="magemontreal_inlineformkeyupdater/general/enable">
+                <arguments>
+                    <argument name="template" xsi:type="string">MageMontreal_InlineFormKeyUpdater::inline_form_key_updater.phtml</argument>
+                </arguments>
+            </block>
+        </referenceContainer>
+    </body>
+</page>

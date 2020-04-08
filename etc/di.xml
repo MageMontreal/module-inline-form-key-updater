@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @author Nicolas D'Aoust
+ * @copyright Copyright © 2020 MageMontreal. All rights reserved.
+ * @package MageMontreal_InlineFormKeyUpdater
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    
+    <type name="Magento\Framework\View\Element\FormKey">
+        <plugin name="MageMontrealInlineFormKeyUpdaterPluginFrameworkViewElementFormKey" type="MageMontreal\InlineFormKeyUpdater\Plugin\Framework\View\Element\FormKey" sortOrder="1" disabled="false" />
+    </type>
+    
+</config>
