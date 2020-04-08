@@ -8,9 +8,13 @@ ________________________________________________
 
 https://github.com/magento/magento2/issues/13746
 
+**Issue Title:** Add to Cart Form wrong Form Key in FPC
+
 **Error:** Invalid Form Key. Please refresh the page
 
 **Trigger:** Form submission occuring before the page has loaded entirely. (Add to Cart, Add to Wishlist, etc.)
+
+**Cause:** The originally generated form key which is stored within the page cache hasn't been updated yet.
 ________________________________________________
 
 ### Functional Requirement:
